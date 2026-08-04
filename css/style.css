@@ -997,7 +997,6 @@ ul {
   .product-grid,
   .ingredient-grid {
     grid-template-columns: 1fr;
-    max-width: 340px;
   }
 
   .products-header {
