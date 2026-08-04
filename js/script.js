@@ -1,6 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ============================
+  // MOBILE NAV TOGGLE
+  // ============================
+  const navToggle = document.getElementById('navToggle');
+  const nav = document.querySelector('.nav');
+
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      navToggle.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    // Allow tapping a dropdown parent link to expand it on mobile instead of navigating
+    document.querySelectorAll('.has-dropdown > a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 900) {
+          e.preventDefault();
+          link.parentElement.classList.toggle('dropdown-open');
+        }
+      });
+    });
+  }
+
+  // ============================
   // NEWSLETTER FORM
   // ============================
   const newsletterForm = document.getElementById('newsletterForm');
