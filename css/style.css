@@ -168,7 +168,7 @@ ul {
 }
 
 .nav-links a {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
   font-size: 0.75rem;
   color: #fff;
@@ -301,7 +301,7 @@ ul {
 
 .hero-content > p:not(.eyebrow) {
   max-width: 390px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 0.9rem;
   line-height: 1.8;
   margin-bottom: 36px;
@@ -309,14 +309,14 @@ ul {
 }
 
 .hero-content .eyebrow {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 0.7rem;
   letter-spacing: 2.5px;
 }
 
 .hero-content .btn-primary {
   padding: 16px 34px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 0.8rem;
   border-radius: 4px;
 }
@@ -332,7 +332,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 0.63rem;
   color: rgba(255,255,255,0.68);
   letter-spacing: 0.3px;
@@ -356,7 +356,7 @@ ul {
 
 .hero-bar-tag,
 .hero-bar-scroll {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 0.75rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -394,6 +394,10 @@ ul {
 }
 
 /* Categories */
+.content-canvas {
+  background: #fff;
+}
+
 .categories {
   padding: 70px 20px;
 }
