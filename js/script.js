@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // HERO IMAGE ON REFRESH
   // ============================
   const heroImages = Array.from(document.querySelectorAll('.hero-bg-img'));
-  const heroImageKey = 'noirluxe-hero-image-index';
+  const heroImageKey = 'sora-hero-image-index';
 
   if (heroImages.length > 1) {
     const previousIndex = Number.parseInt(localStorage.getItem(heroImageKey), 10);

@@ -1,4 +1,4 @@
-# NOIRLUXE 
+# SORA
 
 A modern luxury cosmetics e-commerce website designed to provide an elegant and engaging beauty shopping experience.
 
@@ -26,7 +26,7 @@ A modern luxury cosmetics e-commerce website designed to provide an elegant and 
 ## Project Structure
 
 ```text
-NOIRLUXE/
+SORA/
 ├── index.html
 ├── about.html
 ├── css/
@@ -41,7 +41,7 @@ NOIRLUXE/
 Clone the repository and open `index.html` in your browser, or use VS Code Live Server.
 
 ```bash
-git clone https://github.com/your-username/noirluxe.git
+git clone https://github.com/your-username/sora.git
 ```
 
 ## Future Improvements
