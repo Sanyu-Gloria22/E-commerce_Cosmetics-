@@ -13,10 +13,15 @@
   --text-dark: #2b1420;
 }
 
+html,
 body {
   font-family: 'Cormorant Garamond', serif;
   line-height: 1.6;
   color: var(--text-dark);
+  background: var(--wine);
+  overflow-x: clip;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
 }
 
 h1, h2, h3 {
@@ -163,8 +168,9 @@ ul {
 }
 
 .nav-links a {
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   color: #fff;
   transition: color 0.2s ease;
 }
@@ -178,7 +184,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #fff;
 }
 
@@ -265,71 +271,75 @@ ul {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(43,20,32,0.75) 0%, rgba(43,20,32,0.45) 45%, rgba(43,20,32,0.1) 75%);
+  background: linear-gradient(90deg, rgba(35,16,27,0.88) 0%, rgba(35,16,27,0.7) 30%, rgba(35,16,27,0.25) 62%, rgba(35,16,27,0.05) 100%);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 900px;
-  padding: 0 6% 0 8%;
+  width: 100%;
+  max-width: 560px;
+  margin-left: clamp(40px, 8vw, 140px);
+  padding: 170px 0 150px;
   color: #fff;
 }
 
 .hero-content h1 {
-  font-size: 3.6rem;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 1px;
-  font-variant: small-caps;
-  margin: 14px 0 24px;
+  max-width: 470px;
+  font-size: clamp(3.8rem, 5.5vw, 5.5rem);
+  font-weight: 500;
+  line-height: 0.94;
+  letter-spacing: 0.5px;
+  margin: 18px 0 28px;
 }
 
 .hero-content h1 span {
   color: var(--gold);
-  font-weight: 700;
-  font-variant: small-caps;
+  font-weight: 500;
 }
 
 .hero-content > p:not(.eyebrow) {
-  font-size: 1.35rem;
-  font-weight: 300;
-  max-width: 520px;
-  margin-bottom: 32px;
+  max-width: 390px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 36px;
   color: rgba(255,255,255,0.85);
 }
 
 .hero-content .eyebrow {
-  font-size: 0.95rem;
-  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 2.5px;
 }
 
 .hero-content .btn-primary {
-  padding: 17px 38px;
-  font-size: 1.05rem;
-  border-radius: 12px;
+  padding: 16px 34px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  border-radius: 4px;
 }
 
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  margin-top: 36px;
+  gap: 12px 26px;
+  margin-top: 58px;
 }
 
 .hero-badges span {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.9rem;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.63rem;
+  color: rgba(255,255,255,0.68);
+  letter-spacing: 0.3px;
 }
 
 .hero-badges i {
-  color: var(--gold);
+  color: rgba(201,162,39,0.85);
 }
 
 .hero-bar {
@@ -346,6 +356,7 @@ ul {
 
 .hero-bar-tag,
 .hero-bar-scroll {
+  font-family: 'Poppins', sans-serif;
   font-size: 0.75rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -649,12 +660,14 @@ ul {
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 100%;
   max-width: 720px;
   margin: 0 auto;
 }
 
 .testimonial-track-wrapper {
   flex: 1;
+  min-width: 0;
   overflow: hidden;
 }
 
@@ -961,6 +974,7 @@ ul {
   .hero-content {
     padding: 140px 6% 100px;
     max-width: 100%;
+    margin-left: 0;
   }
 
   .hero-content h1 {
@@ -968,7 +982,7 @@ ul {
   }
 
   .hero-overlay {
-    background: rgba(43,20,32,0.6);
+    background: linear-gradient(90deg, rgba(35,16,27,0.82), rgba(35,16,27,0.5));
   }
 
   .hero-bg-img {
