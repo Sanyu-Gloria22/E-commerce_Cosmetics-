@@ -259,13 +259,22 @@ ul {
   position: absolute;
   inset: 0;
   z-index: 0;
+  background: var(--text-dark);
 }
 
 .hero-bg-img {
+  position: absolute;
+  top: 50%;
+  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
+  height: auto;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.hero-bg-img.is-active {
+  opacity: 1;
 }
 
 .hero-overlay {
@@ -990,7 +999,7 @@ ul {
   }
 
   .hero-bg-img {
-    object-position: 75% 15%;
+    object-position: center;
   }
 
   .hero-bar {

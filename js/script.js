@@ -1,6 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ============================
+  // HERO IMAGE ON REFRESH
+  // ============================
+  const heroImages = Array.from(document.querySelectorAll('.hero-bg-img'));
+  const heroImageKey = 'noirluxe-hero-image-index';
+
+  if (heroImages.length > 1) {
+    const previousIndex = Number.parseInt(localStorage.getItem(heroImageKey), 10);
+    const heroImageIndex = Number.isInteger(previousIndex)
+      ? (previousIndex + 1) % heroImages.length
+      : 0;
+
+    localStorage.setItem(heroImageKey, String(heroImageIndex));
+    heroImages[heroImageIndex].classList.add('is-active');
+  }
+
+  // ============================
   // MOBILE NAV TOGGLE
   // ============================
   const navToggle = document.getElementById('navToggle');
